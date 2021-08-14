@@ -1,48 +1,240 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    
-    <body>
-        <style>
-            h1{
-                font-color:Blue;
-            }
-        </style>
-        <h1>Hi!欢迎来到我的主页～</h1>
-        <a  href="#introduce">个人简介</a>
-        <a  href="#program">编程作品</a>
-        <a  href="#share">编程知识分享</a>
-        
-        <div class="moudle">
-        
-        <img src="../static/images/user.png">
-                <h3 id="introduce">zhh135</h3>
-                <p>民族：汉族</p>
-                <p>年龄：13岁</p>
-                <p>爱好:读书、画画</p>
-                <p>技能：Python、Html、Scratch、半吊子JS</p>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body background="./images/01.png" ;>
+    <style>
+        h1.title {
+            color: Black;
+            font-size: 50px;
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        h1.big_title {
+            color: Black;
+            font-size: 70px;
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        h3.title {
+            color: Black;
+            font-size: 30px;
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        h3.big_title {
+            color: Black;
+            font-size: 50px;
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        h2.big_title {
+            color: Black;
+            font-size: 55px;
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        div.moudle {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+
+        }
+
+        div.moudle2 {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+            flex-flow: column;
+            display: flex;
+        }
+
+        header.moudle {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+            position: fixed;
+            width: 69%;
+            height: 100%;
+            top: 0px;
+            left: 0px
+        }
+
+        aside.moudle {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+            position: fixed;
+            width: 30%;
+            height: 100%;
+            top: 0%;
+            left: 70%;
+        }
+        }
+
+        article.moudle {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+            position: fixed;
+            width: 70%;
+            height: 70%;
+            top: 100%;
+            left: 0%;
+        }
+        }
+
+
+        div.works {
+            background-color: rgba(250, 250, 250, 0);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+
+
+        }
+
+        div.articles {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        div.catalog {
+            background-color: rgba(250, 250, 250, 0.55);
+            backdrop-filter: blur(14px) saturate(150%);
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 5px;
+            margin-left: 5px;
+            flex-flow: column;
+            display: flex;
+
+        }
+
+        p {
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+            font-size: 17px;
+
+        }
+
+        a.c {
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 5px;
+            color: Black;
+            flex-flow: column;
+            display: flex;
+        }
+
+        a.works {
+            font-family: 微软雅黑 Light;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <header class="moudle">
+
+        <h2 class="big_title">zhh135的博客</h2>
+        <div class="catalog">
+            <a href="#introduce" class="c">个人简介</a>
+            <a href="#program" class="c">编程作品</a>
+            <a href="#share" class="c">编程知识分享</a>
         </div>
 
-        <div class="moudle" id="program">
-        
-        <h1>编程作品</h1>
-            
-                <p><a href="https://code.xueersi.com/home/project/detail?lang=code&pid=22344415&version=offline&form=python&langType=python">Proton浏览器</a></p>
-                <p><a href="https://code.xueersi.com/home/project/detail?lang=code&pid=15055364&version=offline&form=python&langType=python">OneSearch浏览器主页</a></p>
-                <p><a href="https://code.xueersi.com/home/project/detail?lang=code&pid=13131626&version=offline&form=python&langType=python">桌面便签</a></p>
-            
+        <div class="moudle2">
+            <h3 id="introduce" class="title">zhh135</h3>
+            <p>民族：汉族</p>
+            <p>年龄：13岁</p>
+            <p>爱好:读书、画画</p>
+            <p>技能：Python、Html、Scratch、半吊子JS</p>
         </div>
-        
-        <div class="moudle id="share">
-                <h1>我的博客</h1>
-                <h3>我与C站的故事</h3>
-                <p>电脑真是一个非常有趣的东西，我和电脑有着不解之缘，尤其是编程。</p>
-                <p>我爸爸是一个电商，笔记本电脑是他的随身之物，我就对电脑有着痴迷般的兴趣，从五岁起就开始玩电脑游戏，但开始时因为输给电脑而痛哭流涕，逐渐电脑成了我的手下败将，这锻炼了我的毅力。</p>
-                <p>自从上了四年级，自己想学，从此我认识了C站。于是我便开始我的编程之路，开始很简单，可后来，程序就复杂了许多，我有时真想放弃，可是回想起以前玩电脑游戏时的毅力，我还是一步一步地走了过来，虽然这条路难走，满是泥泞，遍是荆棘，可我还是用当年学打游戏时的毅力坚持了过来，因为我知道行百里者半九十，坚持就是胜利，付出的心血不会白费。</p>
-                <p>终于程序学得差不多了，“求公因数”、“阶乘”等都可以不费吹灰之力地完成，再复杂的程序也不在话下，我在C站上传了许多我自己做的小游戏，还认识到了许多跟我一样喜爱编程的同学们，同时也得到了C站老师的夸奖，我真是喜出望外。</p>
-                <p>在C站我收获了好多小伙伴，得到了44个赞，85个粉丝，我还和C站的好朋友一起成立了自己的工作室，实在是太有成就感了！</p>
+        <h1 class="title">我的博客</h1>
+        <div class="moudle">
+
+            <h3 class="title">我与C站的故事</h3>
+            <p>电脑真是一个非常有趣的东西，我和电脑有着不解之缘，尤其是编程。</p>
+            <p>我爸爸是一个电商，笔记本电脑是他的随身之物，我就对电脑有着痴迷般的兴趣，从五岁起就开始玩电脑游戏，但开始时因为输给电脑而痛哭流涕，逐渐电脑成了我的手下败将，这锻炼了我的毅力。</p>
+            <p>自从上了四年级，自己想学，从此我认识了C站。于是我便开始我的编程之路，开始很简单，可后来，程序就复杂了许多，我有时真想放弃，可是回想起以前玩电脑游戏时的毅力，我还是一步一步地走了过来，虽然这条路难走，满是泥泞，遍是荆棘，可我还是用当年学打游戏时的毅力坚持了过来，因为我知道行百里者半九十，坚持就是胜利，付出的心血不会白费。
+            </p>
+            <p>终于程序学得差不多了，“求公因数”、“阶乘”等都可以不费吹灰之力地完成，再复杂的程序也不在话下，我在C站上传了许多我自己做的小游戏，还认识到了许多跟我一样喜爱编程的同学们，同时也得到了C站老师的夸奖，我真是喜出望外。
+            </p>
+            <p>在C站我收获了好多小伙伴，得到了44个赞，85个粉丝，我还和C站的好朋友一起成立了自己的工作室，实在是太有成就感了！</p>
         </div>
-    </body>
-</html>
+
+
+    </header>
+    <aside class="moudle" id="program">
+        <h1 class="title">编程作品</h1>
+        <div class="works">
+            <p><a
+                    href="https://code.xueersi.com/home/project/detail?lang=code&pid=22344415&version=offline&form=python&langType=python">Proton浏览器</a>
+            </p>
+            <p><a
+                    href="https://code.xueersi.com/home/project/detail?lang=code&pid=15055364&version=offline&form=python&langType=python">OneSearch浏览器主页</a>
+            </p>
+            <p><a
+                    href="https://code.xueersi.com/home/project/detail?lang=code&pid=13131626&version=offline&form=python&langType=python">桌面便签</a>
+            </p>
+        </div>
+    </aside>
+    </html>
